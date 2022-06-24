@@ -16,6 +16,7 @@
 		4E5DBAFB2865FE7100C05BAD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5DBAFA2865FE7100C05BAD /* Constants.swift */; };
 		4E5DBAFD2865FFD800C05BAD /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5DBAFC2865FFD800C05BAD /* SignUp.swift */; };
 		4E5DBB0128660AC200C05BAD /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5DBB0028660AC200C05BAD /* Login.swift */; };
+		4E5DBB0328660BA600C05BAD /* ProfileSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5DBB0228660BA600C05BAD /* ProfileSetup.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		4E5DBAFA2865FE7100C05BAD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4E5DBAFC2865FFD800C05BAD /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
 		4E5DBB0028660AC200C05BAD /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		4E5DBB0228660BA600C05BAD /* ProfileSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSetup.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				4E5DBAF62865D40B00C05BAD /* SignIn.swift */,
 				4E5DBAFC2865FFD800C05BAD /* SignUp.swift */,
 				4E5DBB0028660AC200C05BAD /* Login.swift */,
+				4E5DBB0228660BA600C05BAD /* ProfileSetup.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 				4E5DBAF72865D40B00C05BAD /* SignIn.swift in Sources */,
 				4E5DBAE42865C6D800C05BAD /* taxiAppApp.swift in Sources */,
 				4E5DBAF92865FDB500C05BAD /* Templates.swift in Sources */,
+				4E5DBB0328660BA600C05BAD /* ProfileSetup.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
