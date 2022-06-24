@@ -10,6 +10,7 @@ import SwiftUI
 struct SplashScreen: View {
     
     @State var pageOffset: CGFloat = 0
+    @State var changeView: Bool = false
     
     var body: some View {
         VStack {
@@ -54,23 +55,23 @@ struct SplashScreen: View {
                     .frame(width: 10, height: 10)
             }
             
-            Button(action: {
+            NavigationLink(destination:
+                            SignIn()
+                                .navigationTitle("")
+                                .navigationBarHidden(true)
+                                .navigationBarBackButtonHidden(true),
+                           isActive: $changeView, label: {
+                classicButton(text: "Next", bg: .orange)
+            })
+            .simultaneousGesture(TapGesture().onEnded({
                 if self.pageOffset < 2 {
                     self.pageOffset += 1
+                } else if self.pageOffset == 2 {
+                    self.changeView = true
                 }
-            }, label: {
-                RoundedRectangle(cornerRadius: 26)
-                    .fill(Color.orange)
-                    .frame(height: UIScreen.main.bounds.height/20)
-                    .overlay(Text("Next")
-                        .font(.system(size: 16))
-                        .fontWeight(.semibold)
-                        .foregroundColor(.black)
-                    )
-                    .shadow(color: .orange.opacity(0.5), radius: 10, x: 5, y: 5)
-            })
+            }))
         }
-        .frame(width: UIScreen.main.bounds.width/1.2,height: UIScreen.main.bounds.height-100)
+        .frame(width: defaultWidth, height: defaultHeight)
         .gesture(DragGesture()
             .onEnded({ value in
                 if value.translation.width > 10 {
