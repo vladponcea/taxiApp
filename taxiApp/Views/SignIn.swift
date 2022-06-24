@@ -119,12 +119,17 @@ struct SignIn: View {
                         .fontWeight(.bold)
                         .foregroundColor(.gray.opacity(0.5))
                     
-                    Button(action: {}, label: {
-                        Text("Sign up")
-                            .font(.system(size: 12))
-                            .fontWeight(.bold)
-                            .foregroundColor(.orange)
-                    })
+                    NavigationLink(destination:
+                                    SignUp()
+                                        .navigationTitle("")
+                                        .navigationBarHidden(true)
+                                        .navigationBarBackButtonHidden(true),
+                                   label: {
+                            Text("Sign up")
+                                .font(.system(size: 12))
+                                .fontWeight(.bold)
+                                .foregroundColor(.orange)
+                        })
                 }
                 .padding(.top, 20)
                 .padding(.bottom, 20)
