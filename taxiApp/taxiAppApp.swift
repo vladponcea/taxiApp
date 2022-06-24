@@ -11,7 +11,9 @@ import SwiftUI
 struct taxiAppApp: App {
     var body: some Scene {
         WindowGroup {
-            SplashScreen()
+            NavigationView {
+                SplashScreen()
+            }
         }
     }
 }
