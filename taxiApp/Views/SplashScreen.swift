@@ -61,15 +61,7 @@ struct SplashScreen: View {
                                 .navigationBarHidden(true)
                                 .navigationBarBackButtonHidden(true),
                            isActive: $changeView, label: {
-                RoundedRectangle(cornerRadius: 26)
-                    .fill(Color.orange)
-                    .frame(height: UIScreen.main.bounds.height/20)
-                    .overlay(Text("Next")
-                        .font(.system(size: 16))
-                        .fontWeight(.semibold)
-                        .foregroundColor(.black)
-                    )
-                    .shadow(color: .orange.opacity(0.5), radius: 10, x: 5, y: 5)
+                classicButton(text: "Next", bg: .orange)
             })
             .simultaneousGesture(TapGesture().onEnded({
                 if self.pageOffset < 2 {
@@ -79,7 +71,7 @@ struct SplashScreen: View {
                 }
             }))
         }
-        .frame(width: UIScreen.main.bounds.width/1.2,height: UIScreen.main.bounds.height-100)
+        .frame(width: defaultWidth, height: defaultHeight)
         .gesture(DragGesture()
             .onEnded({ value in
                 if value.translation.width > 10 {

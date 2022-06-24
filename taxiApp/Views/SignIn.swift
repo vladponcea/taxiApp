@@ -110,15 +110,7 @@ struct SignIn: View {
                 Button(action: {
                     
                 }, label: {
-                    RoundedRectangle(cornerRadius: 26)
-                        .fill(Color.orange)
-                        .frame(height: UIScreen.main.bounds.height/20)
-                        .overlay(Text("Sign in with password")
-                            .font(.system(size: 16))
-                            .fontWeight(.semibold)
-                            .foregroundColor(.black)
-                        )
-                        .shadow(color: .orange.opacity(0.5), radius: 10, x: 5, y: 5)
+                    classicButton(text: "Sign in with password", bg: .orange)
                 })
                 
                 HStack {
@@ -137,7 +129,7 @@ struct SignIn: View {
                 .padding(.top, 20)
                 .padding(.bottom, 20)
             }
-            .frame(width: UIScreen.main.bounds.width/1.2, height: UIScreen.main.bounds.height-100)
+            .frame(width: defaultWidth, height: defaultHeight)
         }
     }
 }
