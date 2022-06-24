@@ -14,6 +14,7 @@
 		4E5DBAF72865D40B00C05BAD /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5DBAF62865D40B00C05BAD /* SignIn.swift */; };
 		4E5DBAF92865FDB500C05BAD /* Templates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5DBAF82865FDB500C05BAD /* Templates.swift */; };
 		4E5DBAFB2865FE7100C05BAD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5DBAFA2865FE7100C05BAD /* Constants.swift */; };
+		4E5DBAFD2865FFD800C05BAD /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5DBAFC2865FFD800C05BAD /* SignUp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		4E5DBAF62865D40B00C05BAD /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
 		4E5DBAF82865FDB500C05BAD /* Templates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Templates.swift; sourceTree = "<group>"; };
 		4E5DBAFA2865FE7100C05BAD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4E5DBAFC2865FFD800C05BAD /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 			children = (
 				4E5DBAF42865C7AA00C05BAD /* SplashScreen.swift */,
 				4E5DBAF62865D40B00C05BAD /* SignIn.swift */,
+				4E5DBAFC2865FFD800C05BAD /* SignUp.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E5DBAFB2865FE7100C05BAD /* Constants.swift in Sources */,
+				4E5DBAFD2865FFD800C05BAD /* SignUp.swift in Sources */,
 				4E5DBAF52865C7AA00C05BAD /* SplashScreen.swift in Sources */,
 				4E5DBAF72865D40B00C05BAD /* SignIn.swift in Sources */,
 				4E5DBAE42865C6D800C05BAD /* taxiAppApp.swift in Sources */,
