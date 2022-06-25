@@ -123,7 +123,14 @@ struct Login: View {
                     })
                     .animation(.default, value: self.rememberMe)
                     
-                    classicButton(text: "Sign In", bg: .orange)
+                    NavigationLink(destination:
+                                    ProfileSetup()
+                        .navigationTitle("")
+                        .navigationBarHidden(true)
+                        .navigationBarBackButtonHidden(true),
+                                   label: {
+                        classicButton(text: "Sign In", bg: .orange)
+                    })
                     
                     Button(action: {
                         

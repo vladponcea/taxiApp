@@ -107,9 +107,11 @@ struct SignIn: View {
                 .padding(.top, 20)
                 .padding(.bottom, 20)
                 
-                Button(action: {
-                    
-                }, label: {
+                NavigationLink(destination: Login()
+                    .navigationTitle("")
+                    .navigationBarHidden(true)
+                    .navigationBarBackButtonHidden(true),
+                               label: {
                     classicButton(text: "Sign in with password", bg: .orange)
                 })
                 

@@ -195,7 +195,7 @@ struct SignUp: View {
                                         .navigationBarHidden(true)
                                         .navigationBarBackButtonHidden(true),
                                    label: {
-                            Text("Sign up")
+                            Text("Sign in")
                                 .font(.system(size: 12))
                                 .fontWeight(.bold)
                                 .foregroundColor(.orange)

@@ -13,6 +13,7 @@ struct taxiAppApp: App {
         WindowGroup {
             NavigationView {
                 SplashScreen()
+                    .preferredColorScheme(.light)
             }
         }
     }
