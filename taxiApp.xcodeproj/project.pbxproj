@@ -18,6 +18,10 @@
 		4E5DBB0128660AC200C05BAD /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5DBB0028660AC200C05BAD /* Login.swift */; };
 		4E5DBB0328660BA600C05BAD /* ProfileSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5DBB0228660BA600C05BAD /* ProfileSetup.swift */; };
 		4E5DBB0528660EAB00C05BAD /* CreatePin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5DBB0428660EAB00C05BAD /* CreatePin.swift */; };
+		4E7AD6442866FB4D00953B66 /* SetFaceID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7AD6432866FB4D00953B66 /* SetFaceID.swift */; };
+		4E7AD6482867010300953B66 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7AD6472867010300953B66 /* Home.swift */; };
+		4E7AD64B2867062000953B66 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7AD64A2867062000953B66 /* LocationManager.swift */; };
+		4E7AD64E2867087800953B66 /* MKCoordinateRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7AD64D2867087800953B66 /* MKCoordinateRegion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +37,10 @@
 		4E5DBB0028660AC200C05BAD /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		4E5DBB0228660BA600C05BAD /* ProfileSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSetup.swift; sourceTree = "<group>"; };
 		4E5DBB0428660EAB00C05BAD /* CreatePin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePin.swift; sourceTree = "<group>"; };
+		4E7AD6432866FB4D00953B66 /* SetFaceID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetFaceID.swift; sourceTree = "<group>"; };
+		4E7AD6472867010300953B66 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		4E7AD64A2867062000953B66 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		4E7AD64D2867087800953B66 /* MKCoordinateRegion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKCoordinateRegion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +73,8 @@
 		4E5DBAE22865C6D800C05BAD /* taxiApp */ = {
 			isa = PBXGroup;
 			children = (
+				4E7AD64C2867086800953B66 /* Extensions */,
+				4E7AD6492867061300953B66 /* Managers */,
 				4E5DBAF22865C79000C05BAD /* Models */,
 				4E5DBAF12865C78C00C05BAD /* Views */,
 				4E5DBAF32865C79500C05BAD /* ViewModels */,
@@ -94,6 +104,8 @@
 				4E5DBB0028660AC200C05BAD /* Login.swift */,
 				4E5DBB0228660BA600C05BAD /* ProfileSetup.swift */,
 				4E5DBB0428660EAB00C05BAD /* CreatePin.swift */,
+				4E7AD6432866FB4D00953B66 /* SetFaceID.swift */,
+				4E7AD6472867010300953B66 /* Home.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -110,6 +122,22 @@
 			children = (
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4E7AD6492867061300953B66 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				4E7AD64A2867062000953B66 /* LocationManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		4E7AD64C2867086800953B66 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4E7AD64D2867087800953B66 /* MKCoordinateRegion.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,10 +212,14 @@
 			files = (
 				4E5DBB0128660AC200C05BAD /* Login.swift in Sources */,
 				4E5DBB0528660EAB00C05BAD /* CreatePin.swift in Sources */,
+				4E7AD64E2867087800953B66 /* MKCoordinateRegion.swift in Sources */,
 				4E5DBAFB2865FE7100C05BAD /* Constants.swift in Sources */,
+				4E7AD6482867010300953B66 /* Home.swift in Sources */,
 				4E5DBAFD2865FFD800C05BAD /* SignUp.swift in Sources */,
 				4E5DBAF52865C7AA00C05BAD /* SplashScreen.swift in Sources */,
 				4E5DBAF72865D40B00C05BAD /* SignIn.swift in Sources */,
+				4E7AD6442866FB4D00953B66 /* SetFaceID.swift in Sources */,
+				4E7AD64B2867062000953B66 /* LocationManager.swift in Sources */,
 				4E5DBAE42865C6D800C05BAD /* taxiAppApp.swift in Sources */,
 				4E5DBAF92865FDB500C05BAD /* Templates.swift in Sources */,
 				4E5DBB0328660BA600C05BAD /* ProfileSetup.swift in Sources */,
@@ -322,6 +354,7 @@
 				DEVELOPMENT_TEAM = VWD3W6VA3Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to use our services";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -351,6 +384,7 @@
 				DEVELOPMENT_TEAM = VWD3W6VA3Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to use our services";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

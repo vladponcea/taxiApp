@@ -103,7 +103,12 @@ struct CreatePin: View {
                 
                 Spacer()
                 
-                classicButton(text: "Continue", bg: .orange)
+                NavigationLink(destination: SetFaceID()
+                    .navigationTitle("")
+                    .navigationBarHidden(true)
+                    .navigationBarBackButtonHidden(true), label: {
+                        classicButton(text: "Continue", bg: .orange)
+                    })
             }
             .frame(width: defaultWidth, height: defaultHeight)
         }
