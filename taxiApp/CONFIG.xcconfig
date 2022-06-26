@@ -1,0 +1,14 @@
+//
+//  CONFIG.xcconfig
+//  taxiApp
+//
+//  Created by Vladut Mihai Poncea on 26.06.2022.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+PRODUCT_BUNDLE_IDENTIFIER = com.taxiVlad
+PRODUCT_NAME = taxiApp
+
+EXCLUDED_ARCHS[sdk=iphonesimulator*] = arm64

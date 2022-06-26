@@ -6,13 +6,19 @@
 //
 
 import SwiftUI
+import GoogleMaps
 
 @main
 struct taxiAppApp: App {
+    
+    init() {
+        GMSServices.provideAPIKey("AIzaSyCTeta9MsiDgoSlPKdwexCySAGEAMCDtRs")
+    }
+    
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                SplashScreen()
+                Home()
                     .preferredColorScheme(.light)
             }
         }

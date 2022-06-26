@@ -6,21 +6,17 @@
 //
 
 import SwiftUI
-import MapKit
 import Combine
 
 struct Home: View {
     
     @State var showPopUp: Bool = false
     
-    @ObservedObject private var locationManager = LocationManager()
-    @State private var region = MKCoordinateRegion.defaultRegion
-    @State var cancellable: AnyCancellable?
-    
     var body: some View {
         ZStack {
             ZStack {
-                Map(coordinateRegion: $region, interactionModes: .all, showsUserLocation: true, userTrackingMode: nil)
+                
+                GoogleMapsView()
                     .ignoresSafeArea()
                 
                 VStack {
@@ -130,15 +126,6 @@ struct Home: View {
                 .disabled(showPopUp ? false : true)
         }
         .animation(.default, value: self.showPopUp)
-        .onAppear {
-            setCurrentLocation()
-        }
-    }
-    
-    private func setCurrentLocation() {
-        cancellable = locationManager.$location.sink { location in
-            region = MKCoordinateRegion(center: location?.coordinate ?? CLLocationCoordinate2D(), latitudinalMeters: 500, longitudinalMeters: 500)
-        }
     }
 }
 
